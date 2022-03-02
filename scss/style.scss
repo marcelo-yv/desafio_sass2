@@ -132,9 +132,6 @@
     margin-bottom: $margenes-paginas;
 }
 
-
-
-
 }
 /* Pantallas de 576px de ancho o más */
 
@@ -221,7 +218,14 @@
     padding: 1rem;
     
 }
-
+@each $opcion, $color in $map {
+    .#{$opcion}{
+        background-color: $color;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    
+}
 /* footer*/
 .footer_contenedor{
     margin-top: 2rem;

@@ -167,6 +167,18 @@
     border: 1px solid #8B0000;
     border-radius: 1rem;
     padding: 1rem; }
+  .cuotas {
+    background-color: #85f585;
+    padding: 1rem;
+    border-radius: 1rem; }
+  .envio {
+    background-color: #f5c773;
+    padding: 1rem;
+    border-radius: 1rem; }
+  .descuentos {
+    background-color: #cc6826;
+    padding: 1rem;
+    border-radius: 1rem; }
   /* footer*/
   .footer_contenedor {
     margin-top: 2rem;
