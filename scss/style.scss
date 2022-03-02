@@ -86,6 +86,32 @@
     border-radius: 1rem;
     color: white;
 }
+.footer_contenedor{
+    background-color: $color-fondo;
+    border: 1px solid white;
+    border-radius: 1rem;
+    color: white;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li{
+        padding: 0.2rem;
+        margin-top: 0.5rem;
+        list-style-type: none;
+        text-align: center;
+        background-color: white;
+
+                &:hover{transform: scale(1.4);}
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
 .menu_footer{
     display: flex;
     flex-direction: column;
@@ -95,17 +121,7 @@
 .horarios{
     text-align: center;
 }
-.menufooter_lista_items{
-    padding: 0.2rem;
-    margin-top: 0.5rem;
-    list-style-type: none;
-    text-align: center;
-    background-color: white;
-}
-.menufooter_lista_items_a{
-    text-decoration: none;
-    color: black;
-}
+
 .redesypagos{
     margin: 0.5rem;
     display: flex;
@@ -229,32 +245,36 @@
 /* footer*/
 .footer_contenedor{
     margin-top: 2rem;
-    background-color: #8B0000;
-    border: 1px solid white;
-    border-radius: 2rem;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    color: white
+        background-color: $color-fondo;
+        border: 1px solid white;
+        border-radius: 2rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        color: white     
 }
-.menufooter_lista{
-    display: flex;
-    flex-direction: row;
-    padding: 0.5rem;
-}
-.menufooter_lista_items{
-    list-style-type: none;
-    margin-left: 0.2rem;
-    padding: 0.2rem;
-}
-.menufooter_lista_items_a{
-    text-decoration: none;
-    color: white;
-    padding: 0.2rem;
-    transition: all 1s;
-}
-.menufooter_lista_items:hover{
-    transform: scale(1.2);
+
+footer{
+    ul{
+      display: flex;
+      flex-direction: row;
+      padding: 0.5rem;
+
+        li{
+          list-style-type: none;
+          margin-left: 0.5rem;
+          padding: 0.2rem;
+
+             &:hover{transform: scale(1.4);}
+
+        a{  
+             text-decoration: none;
+             color: white;
+             padding: 0.2rem;
+             transition: all 1s;
+        }
+    }
+ }
 }
 .horarios{
     margin-left: 1rem;
